@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>م. محمد جميل الشيخ | مهندس مدني ويدير مشروعات</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glassmorphism {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glassmorphism border-b border-slate-200 dark:border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform">
+                    م
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight text-slate-900 dark:text-white">م. محمد جميل الشيخ</span>
+                    <span class="text-xs text-brand-600 dark:text-brand-500 font-semibold">إدارة المشروعات - الري</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm">
+                <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">عن المهندس</a>
+                <a href="#experience" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">الخبرات العملية</a>
+                <a href="#projects" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">المشاريع</a>
+                <a href="#skills" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">المهارات والتقنيات</a>
+                <a href="#contact" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">التواصل</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-4">
+                <!-- Dark Mode Toggle -->
+                <button id="themeToggle" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-500 transition-all">
+                    <i class="fa-solid font-normal text-lg" id="themeIcon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-4 space-y-3">
+            <a href="#about" class="block py-2 text-slate-700 dark:text-slate-200 font-semibold hover:text-brand-600">عن المهندس</a>
+            <a href="#experience" class="block py-2 text-slate-700 dark:text-slate-200 font-semibold hover:text-brand-600">الخبرات العملية</a>
+            <a href="#projects" class="block py-2 text-slate-700 dark:text-slate-200 font-semibold hover:text-brand-600">المشاريع</a>
+            <a href="#skills" class="block py-2 text-slate-700 dark:text-slate-200 font-semibold hover:text-brand-600">المهارات والتقنيات</a>
+            <a href="#contact" class="block py-2 text-slate-700 dark:text-slate-200 font-semibold hover:text-brand-600">التواصل</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-500 text-sm font-semibold border border-brand-200 dark:border-brand-800/50">
+                        <i class="fa-solid fa-building-columns"></i> وزارة الموارد المائية والري
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                        المهندس / <span class="text-brand-600 dark:text-brand-500">محمد جميل الشيخ</span>
+                    </h1>
+                    
+                    <p class="text-xl font-medium text-slate-600 dark:text-slate-300">
+                        مهندس مدني ومتخصص في إدارة المشروعات الهندسيّة وتطوير البنية التحتية المائية
+                    </p>
+
+                    <p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        خبرة في التخطيط، الإشراف، والتنفيذ لمشروعات الموارد المائية والري، مع التركيز على ضبط الجودة، الجدول الزمني، وإدارة الميزانيات وفق أعلى المعايير الهندسية.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <a href="#contact" class="px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold shadow-lg shadow-brand-500/25 transition-all hover:scale-105 flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> تواصل معي
+                        </a>
+                        <a href="#projects" class="px-6 py-3.5 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-white font-semibold transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-diagram-project"></i> استعراض المشاريع
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80">
+                        <!-- Decorative Shapes -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-600 to-cyan-400 rounded-3xl transform rotate-6 scale-95 opacity-70 blur-lg"></div>
+                        <div class="relative w-full h-full rounded-3xl bg-slate-200 dark:bg-slate-800 border-2 border-white dark:border-slate-700 shadow-2xl flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+                            <div class="w-28 h-28 rounded-full bg-brand-100 dark:bg-brand-900/50 flex items-center justify-center text-brand-600 dark:text-brand-500 text-5xl mb-4">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-lg">م. محمد جميل الشيخ</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">مهندس مدني / إدارة مشروعات</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview / About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">نبذة عن المهندس</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-500 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">الهندسة المدنية</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        خبرة راسخة في التصميم والإشراف على المنشآت الخرسانية والأنشطة الهندسية المرتبطة بالبنية التحتية والمنشآت المائية.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-500 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">إدارة المشروعات</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        تطبيق أحدث منهجيات إدارة المشروعات لحساب التكاليف، الجداول الزمنية، ومتابعة تنفيذ الأعمال الحقلية بكفاءة عالية.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-500 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">قطاع الري والموارد المائية</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        العمل الميداني والإداري داخل وزارة الموارد المائية والري للإشراف على مشروعات التأهيل والمحطات والمنشآت المائية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">الخبرة المهنية</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="relative border-r-2 border-brand-500/30 mr-4 md:mr-32 space-y-10">
+                <!-- Item 1 -->
+                <div class="relative pr-8">
+                    <div class="absolute -right-[9px] top-0 w-4 h-4 rounded-full bg-brand-600 border-4 border-white dark:border-slate-900"></div>
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                        <span class="text-xs font-bold text-brand-600 dark:text-brand-500 bg-brand-50 dark:bg-brand-900/30 px-3 py-1 rounded-full">الحالي</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-2">مهندس إدارة مشروعات</h3>
+                        <h4 class="text-slate-600 dark:text-slate-400 font-semibold text-sm">وزارة الموارد المائية والري - مصر</h4>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+                            متابعة تنفيذ مشروعات الري والبنية التحتية، إعداد التقارير الفنية والمالية، مراجعة المستخلصات والتنسيق بين الجهات المنفذة لضمان الالتزام بالمواصفات القياسية.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative pr-8">
+                    <div class="absolute -right-[9px] top-0 w-4 h-4 rounded-full bg-brand-400 border-4 border-white dark:border-slate-900"></div>
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">مهندس موقع ومستخلصات</h3>
+                        <h4 class="text-slate-600 dark:text-slate-400 font-semibold text-sm">مشروعات المنشآت المائية والخرسانية</h4>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+                            الإشراف المباشر على أعمال التنفيذ بالموقع، مطابقة المخططات الهندسية بالموقع، والتأكد من تطبيق اشتراطات السلامة والجودة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">المشاريع والمجالات</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-water-ladder"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">تأهيل وتبين الترع والأنهاء المائية</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            متابعة وإدارة أعمال تبطين وتأهيل المجاري المائية لرفع كفاءة توزيع المياه وتقليل الفاقد.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-slate-200 dark:bg-slate-700 rounded-lg">إدارة الموارد</span>
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-slate-200 dark:bg-slate-700 rounded-lg">ضبط الجودة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 bg-gradient-to-r from-emerald-600 to-teal-600 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-bridge"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">منشآت الري الكبرى والأهدرة</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            الإشراف الفني والإداري على إنشاء وصيانة الهدارات والكباري الخرسانية ومحطات الرفع.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-slate-200 dark:bg-slate-700 rounded-lg">خرسانة مسلحة</span>
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-slate-200 dark:bg-slate-700 rounded-lg">جداول زمنية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 transition-all hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 bg-gradient-to-r from-slate-700 to-slate-900 flex items-center justify-center text-white text-5xl">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">حصر وتخطيط الميزانيات</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            إعداد كراسات الشروط والمواصفات وحصر الكميات وتقييم المستخلصات المالية للمشروعات.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-slate-200 dark:bg-slate-700 rounded-lg">حصر كميات</span>
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-slate-200 dark:bg-slate-700 rounded-lg">إدارة تكاليف</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">المهارات والبرامج الهندسية</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Hard Skills -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white border-r-4 border-brand-600 pr-3">المهارات التقنية والبرامج</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span>إدارة المشروعات (Primavera P6 / MS Project)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-brand-600 h-full rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span>التصميم والرسومات الهندسية (AutoCAD)</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-brand-600 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span>حصر الكميات وإعداد المستخلصات</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-brand-600 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white border-r-4 border-brand-600 pr-3">المهارات الشخصية والإدارية</h3>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 text-center">
+                            <i class="fa-solid fa-people-group text-2xl text-brand-600 mb-2"></i>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">قيادة فرق العمل</h4>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 text-center">
+                            <i class="fa-solid fa-handshake text-2xl text-brand-600 mb-2"></i>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">التفاوض وإدارة العقود</h4>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 text-center">
+                            <i class="fa-solid fa-clock text-2xl text-brand-600 mb-2"></i>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">إدارة الوقت والالتزام</h4>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 text-center">
+                            <i class="fa-solid fa-headset text-2xl text-brand-600 mb-2"></i>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">حل المشكلات الميدانية</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">تواصل معي</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">يمكنك التواصل معي لمناقشة المشروعات والاستشارات الهندسية</p>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Info Cards -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-500 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-500 dark:text-slate-400">جهة العمل</h4>
+                            <p class="font-bold text-slate-900 dark:text-white">وزارة الموارد المائية والري - مصر</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-500 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-500 dark:text-slate-400">البريد الإلكتروني</h4>
+                            <p class="font-bold text-slate-900 dark:text-white">m.jamil@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-500 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-500 dark:text-slate-400">الموقع</h4>
+                            <p class="font-bold text-slate-900 dark:text-white">جمهورية مصر العربية</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simple Contact Form -->
+                <div class="lg:col-span-7 bg-slate-50 dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700">
+                    <form id="contactForm" onsubmit="event.preventDefault(); alert('تم استلام رسالتك بنجاح! شكراً لتواطلك.');" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">الاسم الكامل</label>
+                            <input type="text" required placeholder="أدخل اسمك الكريم" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">البريد الإلكتروني</label>
+                            <input type="email" required placeholder="example@domain.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">الرسالة</label>
+                            <textarea rows="4" required placeholder="اكتب رسالتك هنا..." class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl transition-all shadow-md">
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>جميع الحقوق محفوظة © <span id="year"></span> | المهندس محمد جميل الشيخ</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Dark / Light Theme Logic
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        
+        // System preference or saved preference
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeIcon.classList.add('fa-moon');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
